@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0
+}
+/* navber.css */
+.logo-img{
+    width: 50px;
+    margin: 10px 0 0 10px;
+    border: 1px solid rgb(58, 87, 58);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(58, 87, 58);
+}
+.nav ul li a:hover{
+    color: coral;
+}
+/* nav response */
+@media screen and (min-width:480px) and (max-width:668px) {
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+}
+
+
+
+
+
+
+/* Banner.css */
+.section{
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(images/back-img-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 50px;
+}
+.sp-color{
+    color: rgb(253, 69, 2);
+}
+.hero-text h3{
+    margin-bottom: 20px;
+}
+.hero-text h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero-text p{
+    font-size: 20px;
+}
+.hero-text button{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: 1s all ease;
+}
+.hero-text button:hover{
+    background-color:  rgb(253, 69, 2);
+    color: black;
+}
+.hero-icon i{
+    padding: 5px;
+    font-size: 30px;
+}
+.hero-img{
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    transition:1s all ease;
+}
+.hero-img:hover{
+    transform: translateX(30px);
+}
+
+@media screen and (min-width:480px) and (max-width:668px){
+    .section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+.About-Section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 50px 100px;
+    gap: 50px;
+}
+.About-Section:hover img{
+    width: 500px;
+    height: 400px;
+    border-radius: 0 500px 0 500px;
+}
+.AboutContainer img{
+    width: 500px;
+    height: 400px;
+    border: 2px solid coral;
+    padding: 5px;
+    border-radius: 500px 0 500px 0;
+    transition: 2s all ease;
+}
+.AboutText h2{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.AboutText p{
+    font-size: 20px;
+}
+.AboutText button{
+    background-color: coral;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition:1s all ease;
+}
+.AboutText button:hover{
+    background-color: rgb(97, 31, 7);
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+/* service section */
+.service-text h2{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px;
+}
+.service-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    margin: 0 auto;
+}
+.service-card{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    padding: 50px;
+    background-color: beige;
+}
+.service-card i{
+    font-size: 40px;
+ }
+ .service-card i:hover{
+    color: coral;
+ }
+
+.service-card h2{
+    padding: 20px;
+}
+.service-card p{
+    
+}
+.service-card button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgb(80, 54, 54);
+    border-radius: 10px;
+    color: wheat;
+}
+.service-card button:hover{
+    background-color: coral;
+    color: black;
+}
+
+
+
+
+
+
+
+/*project-section */
+
+
+.project-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.project-text{
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+}
+.project-container{
+    width: 350px;
+    height: 520px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition:0.5s ease;
+    margin-left: 30px;
+}
+.project-container:hover{
+    transform: translateY(-15px);
+}
+
+.project-container img{
+    width: 100%;
+    transition: .5s ease;
+    border-radius: 10px 10px 0 0;
+}
+.project-container:hover img{
+    transform: scale(1.1);
+}
+.card-container{
+   
+}
+.project-container h2{
+    padding: 20px 10px;
+    font-size: 30px;
+}
+.project-container p{
+    padding: 0 10px;
+}
+
+
+.web-skill span{
+    background-color: bisque;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.web-skill span:hover{
+    background-color: rgb(204, 113, 132);
+}
+.project-container button{
+    background-color: rgb(53, 46, 46);
+    padding: 10px 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.project-container button:hover{
+    background-color: rgb(240, 8, 8);
+    color: black;
+}
+
+
+
+
+
+
+.client-full-container{
+    margin: 30px 0;
+}
+.client-text h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+}
+.feedback-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.feedback-container h2{
+    text-align: center;
+    text-transform:uppercase;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.feed-back-card{
+    width: 300px;
+    height: 450px;
+    text-align: center;
+    height: 300px;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.feed-back-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid coral;
+    margin-top: -50px;
+}
+
+.feed-icon i{
+    color: red;
+    padding: 20px 0;
+}
+
+.feed-icon i:hover{
+    color: rgb(112, 88, 88);
+}
+
+.feed-back-card p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.feed-back-card h3{
+    margin-top: 20px;
+}
+
+.feed-back-card h4{
+    margin-top: 10px;
+    color: coral;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-top-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(61, 59, 59);
+    padding: 50px;
+}
+.footer-top-content-1 p{
+    width: 250px;
+    color: rgb(161, 165, 168);
+}
+.footer-top-content-1 h2{
+    color: aliceblue;
+    padding: 20px 0;
+}
+.footer-icon i{
+    background-color: rgb(129, 133, 136);
+    border-radius: 50%;
+   color: black;
+}
+.footer-icon i:hover{
+   color: coral;
+}
+.footer-top-content h2{
+    color: coral;
+    padding: 20px;
+}
+.footer-top-container ul li{
+    list-style: none;
+    color: rgb(192, 201, 209);
+}
+.footer-top-container ul li:hover{
+    color: coral;
+}
+.footer-top-Info{
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+    display: flex;
+    padding: 10px 0;
+    color: rgb(192, 201, 209);
+}
+
+.footer-top-Info i{
+    color: coral;
+}
+
+
+@media screen and (min-width:){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer-css */
+
+footer{
+    background-color: rgb(43, 41, 41);
+    color: rgb(192, 201, 209);
+    padding: 20px;
+    text-align:center ;
+}
+
+
+
+
+
+
+
+
+
